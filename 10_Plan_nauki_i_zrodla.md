@@ -345,4 +345,4 @@ Każdy plik ma listę typowych pułapek. **Przeczytaj je dzień przed egzaminem.
 
 ---
 
-**[← Poprzedni: 09 Organizacja egzaminu](./09_Organizacja_egzaminu.md)** | **[Powrót do indeksu](./00_INDEX.md)**
+**[← Poprzedni: 09 Organizacja egzaminu](./09_Organizacja_egzaminu.md)** | **[Powrót do indeksu](./00_INDEX.md)** | **[Następny: 11 Słownik pojęć i skrótów →](./11_Slownik_pojec_i_skrotow.md)**

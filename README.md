@@ -11,6 +11,7 @@ Kompletne, podzielone tematycznie materiały do egzaminu teoretycznego na pilota
 - 8 plików tematycznych odpowiadających dziedzinom egzaminu (z wagami 5–20%)
 - 1 plik o organizacji egzaminu (Wytyczne ULC nr 1/2025)
 - 1 plik z 6-tygodniowym planem nauki i listą źródeł
+- 1 słownik pojęć i skrótów używanych w materiałach oraz quizie
 - Każdy temat: szczegółowe informacje, mnemoniki, pytania samosprawdzające, „pułapki egzaminacyjne"
 
 ## Spis treści
@@ -28,6 +29,7 @@ Kompletne, podzielone tematycznie materiały do egzaminu teoretycznego na pilota
 | 08 | [Meteorologia](./08_Meteorologia.md) | 5% |
 | 09 | [Organizacja egzaminu](./09_Organizacja_egzaminu.md) | dodatek |
 | 10 | [Plan nauki i źródła](./10_Plan_nauki_i_zrodla.md) | dodatek |
+| 11 | [Słownik pojęć i skrótów](./11_Slownik_pojec_i_skrotow.md) | dodatek |
 
 ## Źródła
 

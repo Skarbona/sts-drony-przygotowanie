@@ -38,6 +38,8 @@ Każdy temat to osobny plik markdown. **Zacznij od tematów o największej wadze
   - Struktura egzaminu, koszt, formy zdawania, wymagania wstępne, procedura odwoławcza, lista podmiotów wyznaczonych.
 - [ ] **[10 — Plan nauki i źródła](./10_Plan_nauki_i_zrodla.md)**
   - 6-tygodniowy plan, polecane kursy, aplikacje, fora, symulatory, materiały do powtórki.
+- [ ] **[11 — Słownik pojęć i skrótów](./11_Slownik_pojec_i_skrotow.md)**
+  - Wyjaśnienia skrótów i pojęć: STS, VLOS, BVLOS, MTOM, OM, ERP, FG, CV, OV, GRB, DRA, AIP, NOTAM, METAR, TAF, IMSAFE, PAVE, DECIDE i wiele innych.
 
 ---
 
@@ -75,8 +77,9 @@ Każdy temat to osobny plik markdown. **Zacznij od tematów o największej wadze
 
 1. Zacznij od pliku **[09_Organizacja_egzaminu.md](./09_Organizacja_egzaminu.md)** — zrozum format egzaminu.
 2. Otwórz **[10_Plan_nauki_i_zrodla.md](./10_Plan_nauki_i_zrodla.md)** — zaplanuj sobie tygodnie.
-3. Przerabiaj tematy 01–08 zgodnie z planem; każdy plik ma na końcu sekcję **„Pytania samosprawdzające"** i **„Pułapki egzaminacyjne"**.
-4. Co tydzień rób mini-test z przerobionych tematów.
-5. W ostatnim tygodniu — pełen test próbny w wybranym podmiocie wyznaczonym.
+3. Podczas nauki miej otwarty **[11_Slownik_pojec_i_skrotow.md](./11_Slownik_pojec_i_skrotow.md)** — skróty często pojawiają się tylko raz, a potem wracają w pytaniach.
+4. Przerabiaj tematy 01–08 zgodnie z planem; każdy plik ma na końcu sekcję **„Pytania samosprawdzające"** i **„Pułapki egzaminacyjne"**.
+5. Co tydzień rób mini-test z przerobionych tematów.
+6. W ostatnim tygodniu — pełen test próbny w wybranym podmiocie wyznaczonym.
 
 **Powodzenia!**

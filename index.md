@@ -33,6 +33,7 @@ Każdy temat to osobna strona. **Zacznij od tematów o największej wadze (20%)*
 
 - [ ] **[09 — Organizacja egzaminu](./09_Organizacja_egzaminu.md)** — struktura, koszty, podmioty wyznaczone, procedury odwoławcze.
 - [ ] **[10 — Plan nauki i źródła](./10_Plan_nauki_i_zrodla.md)** — 6-tygodniowy plan, polecane kursy, aplikacje, symulatory.
+- [ ] **[11 — Słownik pojęć i skrótów](./11_Slownik_pojec_i_skrotow.md)** — szybkie wyjaśnienia skrótów: STS, VLOS, BVLOS, OM, GRB, DRA, AIP, METAR, IMSAFE itd.
 
 ---
 
@@ -70,9 +71,10 @@ Każdy temat to osobna strona. **Zacznij od tematów o największej wadze (20%)*
 
 1. Przeczytaj **[09 — Organizacja egzaminu](./09_Organizacja_egzaminu.md)** — zrozum format.
 2. Otwórz **[10 — Plan nauki i źródła](./10_Plan_nauki_i_zrodla.md)** — zaplanuj tygodnie.
-3. Przerabiaj tematy 01–08 zgodnie z planem; każdy plik ma sekcję **„Pytania samosprawdzające"** i **„Pułapki egzaminacyjne"**.
-4. Co tydzień rób mini-test z przerobionych tematów.
-5. W ostatnim tygodniu — pełen test próbny w wybranym podmiocie wyznaczonym.
+3. Trzymaj pod ręką **[11 — Słownik pojęć i skrótów](./11_Slownik_pojec_i_skrotow.md)** — wiele pytań egzaminacyjnych opiera się na rozumieniu skrótów.
+4. Przerabiaj tematy 01–08 zgodnie z planem; każdy plik ma sekcję **„Pytania samosprawdzające"** i **„Pułapki egzaminacyjne"**.
+5. Co tydzień rób mini-test z przerobionych tematów.
+6. W ostatnim tygodniu — pełen test próbny w wybranym podmiocie wyznaczonym.
 
 **Powodzenia!**
 
