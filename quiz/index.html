@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test STS-01 / STS-02 — Przygotowanie do egzaminu</title>
+  <meta name="description" content="Interaktywny test próbny do egzaminu STS-01 / STS-02 na pilota drona w kategorii szczególnej.">
+  <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="../" class="back-link">← Powrót do materiałów</a>
+      <h1>Test STS-01 / STS-02</h1>
+      <div class="topbar-actions">
+        <button id="btn-history" class="btn-ghost" title="Historia podejść">Historia</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="container">
+    <!-- ===================== START SCREEN ===================== -->
+    <section id="screen-start" class="screen">
+      <div class="card resume-card hidden" id="resume-card">
+        <div>
+          <h2>Masz niedokończony test</h2>
+          <p id="resume-info" class="muted"></p>
+        </div>
+        <div class="card-actions">
+          <button id="btn-resume" class="btn btn-primary">Kontynuuj</button>
+          <button id="btn-abandon" class="btn btn-ghost">Porzuć i zacznij nowy</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Konfiguracja testu</h2>
+        <p class="muted">Test losuje pytania z bazy <strong id="pool-size">…</strong> pytań, zachowując proporcje dziedzin zgodne z wytycznymi ULC.</p>
+
+        <div class="form-group">
+          <label for="num-questions">Liczba pytań:</label>
+          <div class="chip-row" id="num-chips">
+            <button type="button" class="chip" data-num="30">30 (z A2)</button>
+            <button type="button" class="chip chip-active" data-num="40">40 (bez A2)</button>
+            <button type="button" class="chip" data-num="60">60 (powtórka)</button>
+            <button type="button" class="chip" data-num="80">80 (głęboka)</button>
+          </div>
+          <input type="number" id="num-questions" min="5" max="200" value="40" hidden>
+        </div>
+
+        <div class="form-group">
+          <label>Tryb:</label>
+          <div class="chip-row" id="mode-chips">
+            <button type="button" class="chip chip-active" data-mode="exam">Egzaminacyjny (wynik na końcu)</button>
+            <button type="button" class="chip" data-mode="study">Nauki (od razu widzisz, co źle)</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Dziedziny (domyślnie wszystkie wg proporcji egzaminu):</label>
+          <div class="category-grid" id="category-grid">
+            <!-- wypełniane z JS -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="shuffle-options" checked>
+            <span>Mieszaj kolejność odpowiedzi (jak na prawdziwym egzaminie)</span>
+          </label>
+        </div>
+
+        <div class="card-actions">
+          <button id="btn-start" class="btn btn-primary btn-large">Rozpocznij test</button>
+        </div>
+
+        <p class="hint">Próg zdania: <strong>75%</strong>. Czas: 90 s na pytanie (nie wymuszany w tym teście, ale licznik leci).</p>
+      </div>
+    </section>
+
+    <!-- ===================== QUIZ SCREEN ===================== -->
+    <section id="screen-quiz" class="screen hidden">
+      <div class="quiz-header">
+        <div class="quiz-meta">
+          <span class="badge" id="q-category">—</span>
+          <span class="quiz-progress-text" id="q-progress-text">Pytanie 1 z 40</span>
+          <span class="quiz-timer" id="q-timer">00:00</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="q-progress-fill"></div>
+        </div>
+      </div>
+
+      <div class="card question-card">
+        <div class="question-text" id="q-text"></div>
+        <div class="options" id="q-options"></div>
+        <div class="feedback hidden" id="q-feedback"></div>
+      </div>
+
+      <div class="quiz-controls">
+        <button id="btn-prev" class="btn btn-ghost">← Poprzednie</button>
+        <button id="btn-skip" class="btn btn-ghost">Pomiń</button>
+        <button id="btn-next" class="btn btn-primary">Następne →</button>
+        <button id="btn-finish" class="btn btn-warning">Zakończ test</button>
+      </div>
+
+      <div class="quiz-overview">
+        <div id="q-overview-grid" class="overview-grid"></div>
+        <p class="muted small">Kliknij na numer pytania, by do niego przeskoczyć. <span id="unanswered-count">0</span> pytań nieodpowiedzianych.</p>
+      </div>
+    </section>
+
+    <!-- ===================== RESULT SCREEN ===================== -->
+    <section id="screen-result" class="screen hidden">
+      <div class="card result-summary" id="result-summary">
+        <!-- wypełniane z JS -->
+      </div>
+
+      <div class="card">
+        <h3>Wynik wg dziedzin</h3>
+        <div id="result-by-category" class="category-results"></div>
+      </div>
+
+      <div class="card">
+        <div class="result-tools">
+          <h3>Przegląd pytań</h3>
+          <div class="chip-row">
+            <button type="button" class="chip chip-active" data-filter="all">Wszystkie</button>
+            <button type="button" class="chip" data-filter="wrong">Tylko błędne</button>
+            <button type="button" class="chip" data-filter="right">Tylko poprawne</button>
+          </div>
+        </div>
+        <div id="result-review"></div>
+      </div>
+
+      <div class="card-actions card-actions-row">
+        <button id="btn-new-test" class="btn btn-primary">Nowy test</button>
+        <a href="../" class="btn btn-ghost">Powrót do materiałów</a>
+      </div>
+    </section>
+
+    <!-- ===================== HISTORY SCREEN ===================== -->
+    <section id="screen-history" class="screen hidden">
+      <div class="card">
+        <div class="result-tools">
+          <h2>Historia podejść</h2>
+          <button id="btn-clear-history" class="btn btn-ghost btn-small">Wyczyść historię</button>
+        </div>
+        <div id="history-list" class="history-list">
+          <!-- wypełniane z JS -->
+        </div>
+      </div>
+      <div class="card-actions">
+        <button id="btn-history-back" class="btn btn-ghost">← Wróć</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Test działa w 100% w przeglądarce. Stan zapisywany w <code>localStorage</code> tej domeny. <a href="../">Materiały do nauki →</a></p>
+  </footer>
+
+  <!-- Modal dialog -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+      <h3 id="modal-title">Potwierdzenie</h3>
+      <p id="modal-body"></p>
+      <div class="card-actions card-actions-row">
+        <button id="modal-cancel" class="btn btn-ghost">Anuluj</button>
+        <button id="modal-confirm" class="btn btn-primary">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./questions.js"></script>
+  <script src="./quiz.js"></script>
+</body>
+</html>

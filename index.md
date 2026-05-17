@@ -10,6 +10,12 @@ title: Start
 
 ---
 
+## ▶ [Test próbny online (188 pytań, działa w przeglądarce)](./quiz/)
+
+Baza **188 pytań** z 8 dziedzin, losowanie z proporcjami egzaminu (20/20/20/10/10/10/5/5%), tryb egzaminacyjny i nauki, historia podejść. Stan zapisywany w `localStorage` — możesz wrócić do niedokończonego testu.
+
+---
+
 ## Lista TODO — tematy do nauki
 
 Każdy temat to osobna strona. **Zacznij od tematów o największej wadze (20%)**.

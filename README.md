@@ -3,6 +3,8 @@
 Kompletne, podzielone tematycznie materiały do egzaminu teoretycznego na pilota drona w **kategorii szczególnej** (scenariusze standardowe **STS-01** i **STS-02**) w Polsce.
 
 > 🌐 **Wersja webowa (ładnie zrenderowana):** https://skarbona.github.io/sts-drony-przygotowanie/
+>
+> 🧪 **Test próbny online (188 pytań, localStorage):** https://skarbona.github.io/sts-drony-przygotowanie/quiz/
 
 ## Co tu jest
 

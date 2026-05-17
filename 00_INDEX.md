@@ -5,6 +5,12 @@
 
 ---
 
+## ▶ [Test próbny online](./quiz/)
+
+Baza 188 pytań, losowanie 30/40/60/80 zgodnie z proporcjami egzaminu, tryb egzaminacyjny i nauki, historia podejść — wszystko w `localStorage`, działa offline po pierwszym otwarciu.
+
+---
+
 ## Lista TODO — tematy do nauki
 
 Każdy temat to osobny plik markdown. **Zacznij od tematów o największej wadze (20%)**, potem pomniejsze.
