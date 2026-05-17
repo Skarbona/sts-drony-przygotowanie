@@ -79,9 +79,9 @@ const QUESTIONS = [
     correct: 1, explanation: 'STS to scenariusz standardowy — wystarczy oświadczenie operatora składane przez drony.ulc.gov.pl. SORA jest dla operacji poza scenariuszami standardowymi.' },
 
   { id: 14, category: 'przepisy',
-    question: 'Ile wynosi opłata za złożenie oświadczenia operatora w ULC i jak długo jest ono ważne?',
-    options: ['25 zł, 1 rok', '50 zł, 2 lata', '100 zł, 5 lat', 'bezpłatnie, bezterminowo'],
-    correct: 1, explanation: 'Opłata skarbowa: 50 zł, ważność oświadczenia: 2 lata. Po tym okresie trzeba je odnowić.' },
+    question: 'Ile wynosi opłata za potwierdzenie kompletności oświadczenia operatora w ULC (za jeden scenariusz STS)?',
+    options: ['25 zł', '50 zł', '100 zł', 'bezpłatnie'],
+    correct: 1, explanation: 'Od końca lutego 2025 r. — 50 zł za potwierdzenie odbioru i kompletności oświadczenia do jednego scenariusza STS (źródło: taryfa opłat ULC). Każda zmiana w wydanym potwierdzeniu: 10 zł. Oświadczenie nie ma kalendarzowego „terminu ważności" — wygasa, gdy zmieniają się deklarowane okoliczności (sprzęt, pilot, OM, OC) i wymaga wtedy aktualizacji.' },
 
   { id: 15, category: 'przepisy',
     question: 'Ile lat jest ważny certyfikat wiedzy teoretycznej STS po zdaniu egzaminu?',
@@ -179,9 +179,9 @@ const QUESTIONS = [
     correct: 1, explanation: 'UAS.STS-01.010 pkt 2: w odległości 50 m poziomo od sztucznej przeszkody > 105 m wysokość można zwiększyć max o 15 m powyżej przeszkody, na wniosek podmiotu odpowiedzialnego za przeszkodę.' },
 
   { id: 34, category: 'przepisy',
-    question: 'Maksymalna wysokość przestrzeni operacyjnej (Operational Volume) w STS-01 nad przeszkodą 110 m wynosi:',
-    options: ['120 m AGL', '125 m AGL', '150 m AGL (120 + 30 z Contingency)', '155 m AGL'],
-    correct: 2, explanation: 'Operational Volume = wysokość lotu (max 120 m) + 30 m Contingency. UAS.STS-01.010 pkt 3.' },
+    question: 'Maksymalna wysokość przestrzeni operacyjnej (Operational Volume) w STS-01 w terenie płaskim, BEZ korzystania z wyjątku dla wysokich przeszkód, wynosi:',
+    options: ['120 m AGL', '125 m AGL', '150 m AGL (120 m max wysokości lotu + 30 m Contingency Volume)', '195 m AGL'],
+    correct: 2, explanation: 'Operational Volume = max wysokość lotu (120 m AGL) + Contingency Volume (+30 m w pionie). Z wyjątkiem dla przeszkód > 105 m (UAS.STS-01.010 pkt 2) max wysokość lotu rośnie do „wysokość przeszkody + 15 m", a OV rośnie razem z nią.' },
 
   // ========================================================
   // PROCEDURY OPERACYJNE (35–66)
@@ -297,9 +297,9 @@ const QUESTIONS = [
     correct: 1, explanation: 'Zasada "just culture" (376/2014/UE) — zgłoszenie nie skutkuje karą poza rażącym niedbalstwem/umyślnością. Im więcej zgłoszeń, tym bezpieczniejszy system.' },
 
   { id: 57, category: 'procedury',
-    question: 'Jaką minimalną liczbę alternatywnych miejsc lądowania (alternate landing sites) zaleca się przy planowaniu trasy STS-02?',
-    options: ['Żadne — wystarczy punkt startu', 'Minimum 2 alternaty', 'Tylko 1, w połowie trasy', 'Po 1 co 50 m trasy'],
-    correct: 1, explanation: 'Dobra praktyka i wymóg dobrego OM — co najmniej 2 alternaty, by mieć opcję awaryjnego lądowania bez powrotu do bazy.' },
+    question: 'Co rozporządzenie 2019/947 mówi o alternatywnych miejscach lądowania (alternate landing sites) w STS-02?',
+    options: ['Wymaga MINIMUM 2 alternat na każdą trasę', 'Wymaga 1 alternaty co 500 m', 'Nie podaje twardej liczby — operator określa w OM na podstawie analizy ryzyka i charakteru trasy (dobra praktyka: ≥ 2 alternaty)', 'Alternaty są zakazane — dron MUSI wracać do punktu startu'],
+    correct: 2, explanation: 'Przepis nie podaje sztywnej liczby — to operator w Instrukcji Operacyjnej (OM) określa procedurę i liczbę alternat odpowiednio do długości trasy, charakteru terenu, klasy drona i pogody. W praktyce branżowej i w dobrych OM przyjmuje się minimum 2 alternaty na każdy odcinek trasy BVLOS.' },
 
   { id: 58, category: 'procedury',
     question: 'Operator drona zarządzający kilkoma operacjami jednocześnie powinien:',
@@ -337,9 +337,9 @@ const QUESTIONS = [
     correct: 1, explanation: 'Fly-away to utrata kontroli mimo działającego łącza — kluczowe użycie FTS (np. spadochron klasy C5) by zatrzymać drona w sposób kontrolowany.' },
 
   { id: 65, category: 'procedury',
-    question: 'Pilot drona o MTOM 8 kg lecącego 70 m AGL w STS-01. Operacja nad polem rolnika, dwóch asystentów blisko strefy. Co jest niezgodne?',
-    options: ['Wszystko jest OK', 'MTOM przekracza limit STS-01', 'Brak danych o briefingu osób w GRB i o ich zgodzie', 'Nie wolno latać 70 m AGL'],
-    correct: 2, explanation: 'Brakuje informacji o briefingu i zgodzie osób w GRB — to obowiązek operatora. MTOM 8 kg i wysokość 70 m mieszczą się w limitach STS-01.' },
+    question: 'Pilot w STS-01 chce wystartować z miejsca, w którym wewnątrz wyznaczonego GRB znajduje się ekipa filmowa (5 osób) niezwiązana z operatorem drona. Kierownik produkcji prosi: „lećcie, ekipa się odsunie". Pilot powinien:',
+    options: ['Wystartować — ekipa się odsunie', 'Najpierw poinformować ekipę o ryzyku, przeszkolić z procedur ostrożności i uzyskać wyraźną zgodę — dopiero wtedy stają się „osobami uczestniczącymi" i mogą być w GRB', 'Wystartować jeśli ekipa odsunie się o min. 5 m', 'Przerwać operację — w GRB nigdy nie może być nikogo poza pilotem'],
+    correct: 1, explanation: 'UAS.STS-01.030 pkt 9: w kontrolowanym obszarze naziemnym mogą się znaleźć WYŁĄCZNIE osoby uczestniczące w operacji, czyli takie, które (1) zostały poinformowane o ryzyku, (2) przeszkolone z procedur ostrożności, (3) wyraźnie wyraziły zgodę. Spełnienie tych trzech warunków „włącza" ekipę do operacji i pozwala na lot.' },
 
   { id: 66, category: 'procedury',
     question: 'Kiedy aktywuje się Return To Home (RTH)?',
@@ -671,9 +671,9 @@ const QUESTIONS = [
     correct: 0, explanation: 'MTOM = masa wszystkich elementów drona ważona przy starcie: rama, elektronika, baterie, gimbal, kamera, payload. Twardy limit producenta.' },
 
   { id: 130, category: 'osiagi',
-    question: 'Reguła kciuka "2/3 max" mówi:',
-    options: ['Lataj tylko po 2/3 baterii', 'Lataj tylko jeśli wiatr średni < 2/3 maks. prędkości lotu drona', 'Zostaw 2/3 czasu na powrót', 'Tylko 2/3 zasięgu używaj'],
-    correct: 1, explanation: 'Bezpieczna reguła: lataj tylko gdy wiatr średni < 2/3 maks. prędkości lotu producenta. Zapas na porywy (które mogą być 2× silniejsze niż średnia).' },
+    question: 'Reguła kciuka „2/3 max" dla wiatru mówi:',
+    options: ['Lataj tylko po 2/3 baterii', 'Lataj tylko jeśli wiatr średni < 2/3 deklarowanej odporności drona na wiatr (max wind resistance)', 'Zostaw 2/3 czasu na powrót', 'Tylko 2/3 zasięgu używaj'],
+    correct: 1, explanation: 'Konserwatywna reguła: lataj tylko gdy wiatr średni < 2/3 deklarowanej odporności drona na wiatr (z User Manual, np. Mavic 3: 12 m/s → bezpiecznie do 8 m/s). UWAGA: to NIE jest max prędkość lotu drona — to inna specyfikacja. Porywy uwzględnij osobno, mogą być 2× silniejsze niż średnia.' },
 
   { id: 131, category: 'osiagi',
     question: 'Rzeczywisty czas lotu w warunkach polowych vs deklarowany przez producenta:',
@@ -785,8 +785,8 @@ const QUESTIONS = [
 
   { id: 152, category: 'ryzyko-powietrze',
     question: 'Klasa przestrzeni powietrznej ICAO, w której typowo operują drony do 120 m AGL w Polsce:',
-    options: ['A', 'C', 'G (niekontrolowana, do ok. 95 m AGL w większości obszaru)', 'F'],
-    correct: 2, explanation: 'Drony typowo operują w klasie G — niekontrolowanej. Wyższe poziomy (C, D) są kontrolowane przez ATC. CTR/TMA mogą sięgać do ziemi w niektórych miejscach.' },
+    options: ['A', 'C', 'G (niekontrolowana — od GND do FL095, ≈ 2 895 m AMSL w większości obszaru)', 'F'],
+    correct: 2, explanation: 'Drony typowo operują w klasie G, która w Polsce rozciąga się od ziemi do FL095 (~2 895 m AMSL). Wyższe poziomy (C) są kontrolowane przez ATC. W obrębie klasy G wycina się jednak strefy CTR/TMA/MCTR wokół lotnisk oraz strefy specjalne (EP R/D/P, TSA/TRA, DRA).' },
 
   { id: 153, category: 'ryzyko-powietrze',
     question: 'Statki załogowe spotykane poniżej 150 m AGL to między innymi:',

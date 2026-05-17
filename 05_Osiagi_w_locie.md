@@ -51,9 +51,10 @@
   - **Z wiatrem** — szybciej, mniejsze zużycie, ale **uwaga przy powrocie**!
 - [ ] **Reguła kciuka:** **planuj powrót pod wiatr** — zostaw zapas baterii
 - [ ] **Wind shear** — uskok wiatru przy przeszkodach, krawędziach lasu — może rzucić dronem
-- [ ] **Limity producenta:** typowo 8–12 m/s dla konsumenckich dronów; profesjonalne (M30, M300) — do 15 m/s
-- [ ] **Reguła 80%:** lataj tylko jeśli wiatr **< 80% maks** producenta. Zostaw zapas na porywy.
-- [ ] **Porywy (gusts):** mogą być 2× silniejsze niż wiatr średni!
+- [ ] **Limity producenta — „wind resistance" / „max wind speed resistance":** typowo 8–12 m/s dla konsumenckich dronów; profesjonalne (M30, M300, M350) — 15 m/s. Wartość znajdziesz w User Manual drona.
+- [ ] **Reguła 2/3 (konserwatywna):** lataj tylko gdy **wiatr średni < 2/3 deklarowanej odporności drona na wiatr**. Np. dla Mavica 3 (12 m/s) → bezpiecznie do 8 m/s średniego wiatru.
+- [ ] **NIE myl** „odporności na wiatr" z „max prędkością lotu" — to dwie różne specyfikacje (max V poziomy = jak szybko leci dron, wind resistance = jaki wiatr utrzyma w zawisie).
+- [ ] **Porywy (gusts):** mogą być 2× silniejsze niż wiatr średni — uwzględnij je oddzielnie (porywy ≤ deklarowanej odporności).
 
 ### Wilgotność i opady
 
@@ -248,7 +249,7 @@ Każdy dron ma w User Manual:
 - [ ] **„20-80 rule":**
   - Startujemy z **80–100% baterii**
   - Zostawiamy **min. 20% rezerwy** na powrót
-- [ ] **„Wind 80%":** lataj tylko jeśli wiatr < 80% maks producenta
+- [ ] **„Wind 2/3":** lataj tylko jeśli wiatr średni < 2/3 deklarowanej odporności drona na wiatr (max wind resistance)
 - [ ] **„Cold = -50%":** w zimie planuj na 50% czasu lotu deklarowanego
 - [ ] **„Storage 3.8":** przechowuj LiPo przy 3.8 V/cell
 - [ ] **Reguła „2-2-2" do bezpiecznego LiPo:**

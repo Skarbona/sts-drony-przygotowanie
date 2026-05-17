@@ -197,11 +197,11 @@
 ### C0 — < 250 g
 
 - [ ] Max prędkość pozioma **19 m/s**
-- [ ] Max wysokość **120 m AGL** (jeśli dron z GPS)
+- [ ] Max wysokość **120 m AGL** (jeśli dron ma funkcję ograniczania wysokości — dla C0 jest opcjonalna)
 - [ ] Brak ostrych krawędzi
-- [ ] Energia uderzenia **< 79 J** (potencjalna w upadku z 120 m)
+- [ ] **Energia uderzenia ≤ 80 J** (limit projektowy z 2019/945 Aneks Część 1)
 - [ ] **NIE wymaga Remote ID** (zbyt mały)
-- [ ] Przykłady: DJI Mini 2/3/4 Pro (< 250 g)
+- [ ] Przykłady: DJI Mini 2/3/4 Pro (< 249 g)
 
 ### C1 — < 900 g
 

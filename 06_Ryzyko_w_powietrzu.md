@@ -21,9 +21,11 @@ FIR Warszawa (EPWW) — cała Polska
 
 | Klasa | Charakter | Drony tu? |
 |-------|-----------|-----------|
-| **G** | Niekontrolowana, do GND 95 m AGL (w niektórych miejscach do FL095) | TAK — operacje BSP zwykle tu |
-| **C** | Kontrolowana — wyższe poziomy (FL095 do FL660) | NIE bez koordynacji |
-| **D** | Kontrolowana — głównie CTR/TMA | NIE bez zgody |
+| **G** | Niekontrolowana, **od GND do FL095** (≈ 2 895 m AMSL) w większości Polski | TAK — operacje BSP zwykle tu (max 120 m AGL) |
+| **C** | Kontrolowana — **od FL095 do FL460/FL660** | NIE bez koordynacji |
+| **D** | Kontrolowana — w obrębie wybranych CTR/TMA | NIE bez zgody |
+
+> **Uwaga:** „Polska to G + C" to uproszczenie. W obrębie klasy G wycina się strefy kontrolowane wokół lotnisk (CTR/MCTR) oraz strefy specjalne (EP R/D/P, TSA/TRA, DRA dla dronów). Dron lecący do 120 m AGL operuje w klasie G — chyba że wpadnie w jedną z tych „wycinek".
 
 ### Struktury przestrzeni dla lotnictwa załogowego (drony muszą znać dla świadomości)
 
@@ -34,8 +36,8 @@ FIR Warszawa (EPWW) — cała Polska
   - Od określonej wysokości (zwykle 1500–2500 ft AMSL) wzwyż
   - „Trąba" nad lotniskiem
 - [ ] **ATZ** (Aerodrome Traffic Zone) — strefa lotniska **niekontrolowanego** (mały aerodrome)
-  - Promień 5 km, do 4000 ft AMSL
-  - Brak ATC, ale ruch lokalny
+  - Typowo promień ok. 5,5 km (3 NM) i pułap do 4 000 ft AMSL lub 1 200 ft AAL — **wymiary różne dla każdego lotniska**, sprawdź w AIP-AD
+  - Brak ATC; ruch koordynuje informator **AFIS** lub piloci sami przez radio
 - [ ] **MCTR / MATZ / MTMA** — wojskowe odpowiedniki
 - [ ] **EP R** (Restricted) — strefa ograniczona (np. R-1, R-2 nad obiektami strategicznymi)
 - [ ] **EP D** (Danger) — strefa niebezpieczna (np. strzelnice, poligony)
@@ -255,7 +257,7 @@ W związku z konfliktem za granicą wschodnią:
 
 ## 6.11 Pytania samosprawdzające
 
-1. Jaka klasa przestrzeni ICAO obowiązuje od ziemi do 95 m AGL w większości Polski? **G (niekontrolowana).**
+1. Jaka klasa przestrzeni ICAO obowiązuje od ziemi do FL095 (~2 895 m AMSL) w większości Polski? **G (niekontrolowana).** Drony operują w niej do 120 m AGL.
 2. Co to ATZ? **Aerodrome Traffic Zone — strefa lotniska niekontrolowanego, typowo promień 5 km.**
 3. Czy mam pierwszeństwo przed śmigłowcem ratunkowym? **NIE — bezwzględne pierwszeństwo statków załogowych.**
 4. Lecisz w dolinie 100 m poniżej krawędzi. Jaką max wysokość AGL możesz mieć? **120 m AGL nad dnem doliny (a nad krawędzią to byłoby ujemne — czyli 20 m powyżej krawędzi).**

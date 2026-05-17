@@ -155,9 +155,10 @@
   - **FIR/UIR** — Flight/Upper Information Region (cała Polska = FIR Warszawa, EPWW)
 
 - [ ] **Klasy przestrzeni ICAO obowiązujące w Polsce**
-  - **G** — niekontrolowana, do 95 m AGL nad terenem (drony w niej operują)
-  - **C** — kontrolowana, wyższe poziomy
-  - **D** — kontrolowana (głównie CTR/TMA)
+  - **G** — niekontrolowana, **od GND do FL095** (≈ 2 895 m AMSL) w większości obszaru Polski (drony w niej operują, do max 120 m AGL)
+  - **C** — kontrolowana, **od FL095 wzwyż** (do FL460/FL660)
+  - **D** — kontrolowana, w obrębie niektórych CTR/TMA
+  - **Uwaga:** w obrębie klasy G „od dołu" wycinane są strefy kontrolowane (CTR/MCTR lotnisk) oraz strefy specjalne (EP R/D/P, TSA/TRA, DRA) — formalnie należą do innych klas/typów.
 
 ---
 
@@ -296,7 +297,7 @@
 5. Czy Remote ID jest wymagany w STS-01? **Tak — aktywny i aktualny system DRI.**
 6. Kiedy egzamin teorii STS-01 ma 30, a kiedy 40 pytań? **30 jeśli mam ważne A2, 40 jeśli tylko A1/A3.**
 7. Gdzie zgłosić wypadek BSP? **PKBWL niezwłocznie, max 72 godziny.**
-8. Jaka jest max wysokość STS-02 w pobliżu komina 150 m? **120 + 30 = 150 m AGL, ale można podnieść do 165 m AGL (15 m powyżej przeszkody) za zgodą właściciela.**
+8. Jaka jest max wysokość lotu STS-01/02 w pobliżu komina 150 m? **Standardowo 120 m AGL (Operational Volume sięga +30 m = 150 m AGL). Przy zachowaniu odległości ≤ 50 m od przeszkody i za zgodą podmiotu odpowiedzialnego za przeszkodę: max wysokość LOTU = 150 m (komin) + 15 m = 165 m AGL, a Operational Volume sięga wtedy 195 m AGL.**
 
 ---
 

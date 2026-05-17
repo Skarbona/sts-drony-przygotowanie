@@ -70,10 +70,11 @@
 - [ ] **Porywy (gusts)** — maksymalna chwilowa prędkość. Mogą być **2× silniejsze** niż wiatr średni!
 - [ ] **Zmienność** (Variable) — `VRB` w METAR, gdy kierunek niestabilny
 
-### Reguła „2/3 max"
+### Reguła „2/3 max wind resistance"
 
-- [ ] **Lataj tylko jeśli wiatr średni < 2/3 maks** prędkości drona
-- [ ] **Przykład:** dron z limitem 12 m/s — bezpiecznie do 8 m/s średniego wiatru (zostaw zapas na porywy)
+- [ ] **Lataj tylko jeśli wiatr średni < 2/3 deklarowanej odporności drona na wiatr** (max wind speed resistance — parametr z User Manual)
+- [ ] **NIE chodzi o max prędkość lotu drona** — to inna specyfikacja. Mavic 3: max V poziomy 21 m/s, odporność na wiatr 12 m/s. Zawsze patrz na wind resistance.
+- [ ] **Przykład:** dron z odpornością 12 m/s — bezpiecznie do 8 m/s średniego wiatru. Porywy uwzględnij osobno (≤ wind resistance).
 
 ### Wind shear (uskok wiatru)
 

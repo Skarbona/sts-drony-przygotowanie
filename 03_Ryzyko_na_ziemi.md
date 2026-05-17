@@ -177,13 +177,13 @@ Z **Części 17 załącznika do 2019/945**:
 - [ ] **Realizacja w DJI:** baza „GeoZones", aktualizowana automatycznie przy podłączeniu do internetu
 - [ ] **Akcja:** ostrzeżenie pilota / automatyczne ograniczenie
 
-### Geofencing
+### Geofencing / Geocaging
 
-- [ ] **Co to:** ograniczenie programowe pozwalające dronowi latać **tylko w wyznaczonym obszarze**
-- [ ] **Typy:**
-  - **Soft fence** — ostrzeżenie + ograniczenie sterowania
+- [ ] **Geofencing (potoczne)** — ogólne ograniczenie programowe, gdzie dron może latać:
+  - **Soft fence** — tylko ostrzeżenie + ograniczenie sterowania
   - **Hard fence** — automatyczne zatrzymanie / RTH
-- [ ] **W STS-02 OBOWIĄZKOWY:** dron klasy C6 musi mieć **aktywny system zapobiegający przekroczeniu granic Flight Geography**
+- [ ] **Geocaging (termin techniczny z 2019/945 Aneks Część 17 dla C6)** — „system that limits the airspace volume" — **twardy** system uniemożliwiający wyjście drona poza zaprogramowaną przestrzeń lotu (Flight Geography). To wymóg klasy C6.
+- [ ] **W STS-02 OBOWIĄZKOWY:** dron klasy C6 musi mieć aktywny geocaging utrzymujący lot w granicach Flight Geography (UAS.STS-02.020 pkt 8 lit. b). „Soft" geofencing nie wystarczy.
 
 ### RTH (Return To Home)
 
