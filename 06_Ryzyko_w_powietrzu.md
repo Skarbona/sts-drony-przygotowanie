@@ -263,7 +263,7 @@ W związku z konfliktem za granicą wschodnią:
 4. Lecisz w dolinie 100 m poniżej krawędzi. Jaką max wysokość AGL możesz mieć? **120 m AGL nad dnem doliny (a nad krawędzią to byłoby ujemne — czyli 20 m powyżej krawędzi).**
 5. Co to AIRAC? **Cykl 28 dni regularnych aktualizacji informacji lotniczej.**
 6. Czy NOTAM-y są ważne dla pilota drona? **TAK — bezwzględnie. Czasowe zmiany w przestrzeni.**
-7. Czy Remote ID innego drona widzę bez specjalnego sprzętu? **TAK, w aplikacjach jak DroneRadar / DJI Aeroscope (telefon z Bluetooth/WiFi może odbierać).**
+7. Czy Remote ID innego drona widzę bez specjalnego sprzętu? **TAK, jeśli telefon i aplikacja obsługują odbiór Direct Remote ID / OpenDroneID przez Bluetooth/WiFi.** Dedykowane systemy producentów (np. dawne DJI AeroScope) to osobna kategoria sprzętu, nie zwykła aplikacja mobilna.
 8. Co to U-space? **Pakiet rozporządzeń UE dla zarządzania ruchem dronów (UTM).**
 
 ---

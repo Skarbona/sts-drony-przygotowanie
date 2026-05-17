@@ -116,10 +116,10 @@
   - Odręczny (i wysłany pocztą/osobiście)
 - [ ] **Wysyłka:** ePUAP / poczta / osobiście w siedzibie ULC
 - [ ] **Koszt:** **50 zł** (opłata skarbowa)
-- [ ] **Ważność:** **2 lata**
+- [ ] **Ważność:** **2 lata** (UAS.SPEC.085). Oświadczenie przestaje być kompletne wcześniej, jeśli operacja nie jest prowadzona zgodnie z oświadczeniem, warunki operacji zmienią się tak, że oświadczenie nie spełnia wymagań, albo operator nie zapewni dostępu organowi nadzoru.
 - [ ] **Weryfikacja statusu:** drony.ulc.gov.pl/search (publiczna lista przyjętych oświadczeń)
 - [ ] **Cross-border:** oświadczenie złożone w Polsce uprawnia do operacji w **całej UE** (po notyfikacji do innego państwa wg sekcji UAS.SPEC.040) — zasada **wzajemnego uznawania**
-- [ ] **Aktualizacja:** każda zmiana danych (np. nowy dron, nowy pilot) wymaga aktualizacji oświadczenia
+- [ ] **Aktualizacja:** każda istotna zmiana danych/warunków (np. nowy typ drona, zmiana OM, zmiana zakresu operacji, personelu lub OC) wymaga aktualizacji oświadczenia przed dalszym wykonywaniem operacji.
 - [ ] **Operator deklaruje, że:**
   - Posiada OC dla każdego lotu
   - Posiada Instrukcję Operacyjną (OM)

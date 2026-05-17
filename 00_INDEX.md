@@ -57,7 +57,7 @@ Każdy temat to osobny plik markdown. **Zacznij od tematów o największej wadze
 | **FTS** | wymagany (cecha klasy C5) | wymagany (cecha klasy C6) |
 | **Materiały niebezpieczne** | zakaz | zakaz |
 | **Ważność certyfikatu wiedzy** | 5 lat | 5 lat |
-| **Ważność oświadczenia operatora** | 2 lata | 2 lata |
+| **Ważność oświadczenia operatora** | 2 lata (lub do utraty kompletności) | 2 lata (lub do utraty kompletności) |
 | **Koszt oświadczenia** | 50 zł | 50 zł |
 
 | Egzamin | Wartość |

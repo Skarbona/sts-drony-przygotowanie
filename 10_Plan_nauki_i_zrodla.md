@@ -293,9 +293,9 @@ Każdy plik ma listę typowych pułapek. **Przeczytaj je dzień przed egzaminem.
   - Wzorzec z Appendix 5 do 2019/947
   - Wzory dostępne komercyjnie (ok. 500–2000 zł) lub samodzielnie
 - [ ] **5.** Wykup **polisę OC**
-- [ ] **6.** **Złóż oświadczenie operatora** w ULC (50 zł, ważne 2 lata)
+- [ ] **6.** **Złóż oświadczenie operatora** w ULC (50 zł, ważne 2 lata zgodnie z UAS.SPEC.085)
 - [ ] **7.** Loguj operacje — **książka lotów drona**, **książka czasu pracy pilota**
-- [ ] **8.** Po 2 latach — odnów oświadczenie
+- [ ] **8.** Odnów oświadczenie po 2 latach albo wcześniej, jeśli istotnie zmieniły się warunki deklarowanej operacji (np. OM, sprzęt, personel, OC, zakres operacji)
 - [ ] **9.** Po 5 latach — odnów certyfikat wiedzy (refresher lub ponowny egzamin)
 
 ---

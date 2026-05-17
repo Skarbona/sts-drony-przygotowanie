@@ -79,9 +79,9 @@ const QUESTIONS = [
     correct: 1, explanation: 'STS to scenariusz standardowy — wystarczy oświadczenie operatora składane przez drony.ulc.gov.pl. SORA jest dla operacji poza scenariuszami standardowymi.' },
 
   { id: 14, category: 'przepisy',
-    question: 'Ile wynosi opłata za potwierdzenie kompletności oświadczenia operatora w ULC (za jeden scenariusz STS)?',
-    options: ['25 zł', '50 zł', '100 zł', 'bezpłatnie'],
-    correct: 1, explanation: 'Od końca lutego 2025 r. — 50 zł za potwierdzenie odbioru i kompletności oświadczenia do jednego scenariusza STS (źródło: taryfa opłat ULC). Każda zmiana w wydanym potwierdzeniu: 10 zł. Oświadczenie nie ma kalendarzowego „terminu ważności" — wygasa, gdy zmieniają się deklarowane okoliczności (sprzęt, pilot, OM, OC) i wymaga wtedy aktualizacji.' },
+    question: 'Ile wynosi opłata za potwierdzenie kompletności oświadczenia operatora w ULC (za jeden scenariusz STS) i jak długo trwa oświadczenie?',
+    options: ['25 zł, 1 rok', '50 zł, 2 lata', '100 zł, 5 lat', 'bezpłatnie, bezterminowo'],
+    correct: 1, explanation: 'Od końca lutego 2025 r. — 50 zł za potwierdzenie odbioru i kompletności oświadczenia do jednego scenariusza STS (taryfa opłat ULC). UAS.SPEC.085: oświadczenie operacyjne ma ograniczony czas 2 lata. Przestaje być kompletne wcześniej, jeśli operacja nie jest prowadzona zgodnie z oświadczeniem, zmienią się warunki operacji tak, że oświadczenie nie spełnia wymagań, albo operator nie zapewnia dostępu organowi nadzoru.' },
 
   { id: 15, category: 'przepisy',
     question: 'Ile lat jest ważny certyfikat wiedzy teoretycznej STS po zdaniu egzaminu?',
@@ -209,7 +209,7 @@ const QUESTIONS = [
   { id: 39, category: 'procedury',
     question: 'Bateria drona właśnie się zapaliła na ziemi. Czym ją gasić?',
     options: ['Wodą z węża strażackiego', 'Piaskiem, kocem gaśniczym lub proszkiem ABC', 'Tylko gaśnicą śniegową CO₂', 'Pianką gaśniczą wodno-mechaniczną'],
-    correct: 1, explanation: 'LiPo gasi się piaskiem, kocem gaśniczym lub proszkiem. WODĄ NIGDY — lit reaguje z wodą, ogień się wzmaga. Ewakuacja, brak gaszenia "twarzą w twarz".' },
+    correct: 1, explanation: 'W małej operacji BSP praktyczna procedura to izolacja/zasypanie piaskiem, koc gaśniczy lub proszek ABC oraz ewakuacja. Nie podchodź „twarzą w twarz" i nie próbuj punktowo polewać pakietu wodą; woda bywa używana przez straż w dużej ilości głównie do chłodzenia otoczenia i ograniczania propagacji.' },
 
   { id: 40, category: 'procedury',
     question: 'Co należy zrobić, gdy osoba postronna wtargnie do kontrolowanego obszaru naziemnego (GRB) podczas operacji?',
@@ -657,8 +657,8 @@ const QUESTIONS = [
 
   { id: 127, category: 'osiagi',
     question: 'W jaki sposób NIE WOLNO gasić palącej się baterii LiPo?',
-    options: ['Piaskiem', 'Kocem gaśniczym', 'Wodą — lit reaguje z wodą, ogień się wzmaga', 'Proszkiem ABC'],
-    correct: 2, explanation: 'WODĄ NIE GASI SIĘ LiPo. Lit reaguje z wodą tworząc wodór (palny) + ciepło. Bezpieczne: piasek, koc gaśniczy, proszek ABC. Po pożarze: do solanki na 14 dni → PSZOK.' },
+    options: ['Piaskiem', 'Kocem gaśniczym', 'Punktowo polewać pakiet wodą z bliska jako podstawową metodą gaszenia', 'Proszkiem ABC'],
+    correct: 2, explanation: 'W operacji BSP podstawowe środki to piasek, koc gaśniczy, proszek ABC i ewakuacja. Wody nie traktuj jako ręcznego, punktowego środka gaszenia pakietu LiPo z bliska; straż może używać dużych ilości wody głównie do chłodzenia i zabezpieczenia otoczenia. Po zdarzeniu bateria do bezpiecznej utylizacji zgodnie z lokalnymi zasadami/PSZOK.' },
 
   { id: 128, category: 'osiagi',
     question: 'Przy temperaturze -10 °C pojemność baterii LiPo spada typowo o:',
@@ -845,8 +845,8 @@ const QUESTIONS = [
 
   { id: 164, category: 'ryzyko-powietrze',
     question: 'Remote ID innego drona w pobliżu można odebrać:',
-    options: ['Tylko specjalnym sprzętem dla policji', 'Aplikacją na telefonie z Bluetooth/WiFi (np. DroneRadar, DJI Aeroscope)', 'Tylko przez SAT', 'Nie da się go odebrać'],
-    correct: 1, explanation: 'Remote ID emituje przez Bluetooth 4/5 lub WiFi. Aplikacje na telefonie odbierają sygnał — dzięki temu inni piloci / służby widzą, kto lata w okolicy.' },
+    options: ['Tylko specjalnym sprzętem dla policji', 'Aplikacją na telefonie obsługującą Direct Remote ID / OpenDroneID przez Bluetooth/WiFi', 'Tylko przez SAT', 'Nie da się go odebrać'],
+    correct: 1, explanation: 'Direct Remote ID emituje przez Bluetooth 4/5 lub WiFi. Telefon z odpowiednim modułem radiowym i aplikacją wspierającą OpenDroneID może odebrać sygnał lokalnie. Dedykowane systemy producentów (np. dawne DJI AeroScope) to osobna kategoria sprzętu, nie zwykła aplikacja mobilna.' },
 
   // ========================================================
   // OGRANICZENIA CZŁOWIEKA (165–176)
@@ -972,7 +972,7 @@ const QUESTIONS = [
   { id: 188, category: 'meteo',
     question: 'Porywy wiatru (gusts) w METAR "24015G25KT":',
     options: ['Średnia 15 KT, max chwilowo 25 KT — uważaj, porywy mogą wymagać przerwania lotu', 'Wiatr 15 m/s, kierunek 25°', '24 KT z porywami do 15 KT', 'Numer rejsu samolotu'],
-    correct: 0, explanation: 'Format: prędkość średnia + G + porywy. Porywy mogą być 2× silniejsze niż średnia. Reguła: lataj poniżej 80% maks producenta z uwzględnieniem porywów.' },
+    correct: 0, explanation: 'Format: prędkość średnia + G + porywy. Porywy mogą być 2× silniejsze niż średnia. Konserwatywna reguła dla drona: wiatr średni < 2/3 deklarowanej odporności na wiatr (max wind resistance z instrukcji), a porywy nie powinny przekraczać tej odporności.' },
 ];
 
 // Export do globalnego zasięgu (script bez modułu)

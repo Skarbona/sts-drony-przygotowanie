@@ -124,8 +124,8 @@
 - [ ] **Pożar baterii LiPo (thermal runaway):**
   - **Objawy:** wzdęcie, ciepło, dym, syk, biały dym/jasny ogień
   - **Reakcja:** **piasek**, **koc gaśniczy**, **proszek ABC**; ewakuacja na zewnątrz
-  - **NIGDY WODĄ** — lit reaguje z wodą, ogień się wzmaga
-  - **Bateria po pożarze** — utopić w wiadrze ze solanką (10% sól) na 14 dni → utylizacja w PSZOK
+  - **Nie polewaj punktowo pakietu wodą z bliska jako podstawową metodą gaszenia** — w małej operacji BSP priorytetem jest izolacja pakietu, ograniczenie rozprzestrzeniania ognia i ewakuacja. Straż pożarna może używać dużych ilości wody głównie do chłodzenia otoczenia i ograniczenia propagacji.
+  - **Bateria po pożarze** — bezpieczne zabezpieczenie i utylizacja zgodnie z lokalnymi zasadami / PSZOK
 
 ### Transport
 
@@ -264,7 +264,7 @@ Każdy dron ma w User Manual:
 1. Jakie napięcie nominalne ma 4S LiPo? **4 × 3.7 V = 14.8 V.**
 2. Co to thermal runaway? **Niekontrolowana reakcja termiczna baterii prowadząca do pożaru/wybuchu.**
 3. Czy spadek temperatury z 20 °C na -10 °C wpływa na czas lotu? **TAK, czas lotu może spaść o 30–35%.**
-4. Czym gasić palącą się baterię LiPo? **Piasek, koc gaśniczy, proszek ABC. NIGDY wodą.**
+4. Czym gasić palącą się baterię LiPo? **Piasek, koc gaśniczy, proszek ABC; odsuń ludzi i zabezpiecz otoczenie. Wody nie używaj punktowo z bliska jako podstawowej metody ręcznego gaszenia pakietu.**
 5. Jak przechowywać LiPo na zimę? **Przy storage charge 3.8 V/cell, w chłodnym, suchym miejscu, w LiPo-bag.**
 6. Co to VRS i jak go uniknąć? **Vortex Ring State — zawirowania przy szybkim opadaniu pionowym. Zniżaj pod kątem.**
 7. Czy mogę startować z 50% baterii? **Można, ale niezalecane — startuj z 95–100%, zostaw rezerwę.**

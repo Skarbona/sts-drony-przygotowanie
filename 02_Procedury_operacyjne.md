@@ -159,7 +159,7 @@ Z UAS.STS-01 załącznika A:
 | **Lost GPS** | spadek satelitów < 6, komunikat | przejście w **Atti mode** → ręczne, ostrożne lądowanie |
 | **Low battery** | alert 30% → krytyczny 15% | **natychmiastowy RTH**, lądowanie awaryjne |
 | **Fly-away** (dron leci niekontrolowanie) | utrata kontroli mimo komend | aktywacja **FTS** (klasa C5/C6); ostatecznie odcięcie zasilania |
-| **Pożar baterii** | dym/płomień przed startem | **piasek / koc gaśniczy / proszek**, NIGDY wodą; ewakuacja |
+| **Pożar baterii** | dym/płomień przed startem | **piasek / koc gaśniczy / proszek**, ewakuacja; nie polewaj pakietu punktowo wodą z bliska jako podstawową metodą gaszenia |
 | **Wtargnięcie osoby** | osoba w GRB | natychmiastowe lądowanie w bezpiecznym miejscu; przerwanie operacji |
 | **Statek załogowy w pobliżu** | obserwacja, ADS-B | **ustąpienie pierwszeństwa**, lądowanie / oddalenie się |
 | **Pogarsza się pogoda** | wzrost wiatru, mgła, opady | natychmiastowe lądowanie |
