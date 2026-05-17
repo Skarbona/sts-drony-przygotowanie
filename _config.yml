@@ -1,0 +1,15 @@
+title: "STS-01 / STS-02 — Przygotowanie do egzaminu"
+description: "Kompletne materiały do egzaminu teoretycznego na operatora drona w kategorii szczególnej (Polska, ULC + EASA)."
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - "*.md"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
