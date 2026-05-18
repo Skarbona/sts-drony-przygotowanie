@@ -325,9 +325,13 @@ function bindEvents() {
 }
 
 function onKeydown(e) {
+  // Modal otwarty → nie ruszaj quizu skrótami (Enter ma kliknąć OK w modalu)
+  if (!$('#modal-overlay').classList.contains('hidden')) {
+    if (e.key === 'Escape') closeModal();
+    return;
+  }
   if ($('#screen-quiz').classList.contains('hidden')) return;
   if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-  // 1-4 — wybierz odpowiedź
   if (e.key >= '1' && e.key <= '4') {
     const idx = parseInt(e.key) - 1;
     const btn = $all('.option')[idx];
@@ -666,12 +670,8 @@ function renderReview() {
   state.questions.forEach((q, i) => {
     const a = state.answers[i];
     const correct = a === q.correct;
-    if (UI.reviewFilter === 'wrong' && (correct || a === null) === false) {
-      // wrong = aktualnie nie correct (czyli null OR wrong) -> chcemy null i wrong
-      if (correct) return;
-    } else if (UI.reviewFilter === 'wrong') {
-      if (correct) return;
-    } else if (UI.reviewFilter === 'right' && !correct) return;
+    if (UI.reviewFilter === 'wrong' && correct) return;
+    if (UI.reviewFilter === 'right' && !correct) return;
 
     let cls = 'review-item';
     if (a === null) cls += ' review-item-unanswered';
@@ -733,7 +733,12 @@ function confirmDialog(title, body, onConfirm) {
   $('#modal-title').textContent = title;
   $('#modal-body').innerHTML = body;
   pendingConfirm = onConfirm;
-  $('#modal-confirm').onclick = () => { closeModal(); if (pendingConfirm) pendingConfirm(); };
+  $('#modal-confirm').onclick = () => {
+    // Najpierw zachowaj referencję — closeModal() zeruje pendingConfirm
+    const fn = pendingConfirm;
+    closeModal();
+    if (typeof fn === 'function') fn();
+  };
   $('#modal-overlay').classList.remove('hidden');
 }
 
